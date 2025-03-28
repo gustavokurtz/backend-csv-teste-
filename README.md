@@ -76,11 +76,11 @@ npm install
 3. Configure as variáveis de ambiente criando um arquivo `.env` na raiz do projeto:
 ```
 DATABASE_URL="postgresql://user:password@localhost:5432/csv_processor"
-AWS_ACCESS_KEY_ID=sua_key_id
-AWS_SECRET_ACCESS_KEY=sua_secret_key
-AWS_REGION=us-east-1
-AWS_S3_BUCKET_NAME=seu_bucket
-PYTHON_API_URL=http://localhost:8000
+AWS_ACCESS_KEY_ID="sua_key_id"
+AWS_SECRET_ACCESS_KEY="sua_secret_key"
+AWS_REGION"=us-east-1"
+AWS_S3_BUCKET_NAME="seu_bucket"
+PYTHON_API_URL="http://localhost:8000"
 ```
 
 4. Execute as migrations do Prisma e gere o cliente Prisma:
