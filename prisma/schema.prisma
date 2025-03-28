@@ -1,0 +1,19 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model CsvFile {
+  id          String   @id @default(uuid())
+  filename    String
+  processedAt DateTime @default(now())
+  s3Url       String?
+  status      String   @default("PROCESSING") // PROCESSING, COMPLETED, ERROR
+  error       String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
