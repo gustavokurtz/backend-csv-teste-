@@ -89,19 +89,12 @@ npx prisma migrate dev
 npx prisma generate
 ```
 
-5. Clone e execute o microserviço Python de processamento:
-```bash
-git clone https://github.com/gustavokurtz/backend-csv-teste.git
-cd backend-csv-teste
-# Siga as instruções do README do repositório para configurar e executar
-```
-
-6. Inicie o servidor de desenvolvimento:
+5. Inicie o servidor de desenvolvimento:
 ```bash
 npm run start:dev
 ```
 
-7. Acesse a documentação Swagger em http://localhost:3000/api
+6. Acesse a documentação Swagger em http://localhost:3000/api
 
 ## Testes
 
